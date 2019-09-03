@@ -1,0 +1,29 @@
+.container{
+    border: 4px #5d4a34 solid;
+    background-color: #251a12;
+ }
+
+ .card{
+    background-color: #251a12;
+    border: none;
+ }
+
+ .icons{
+    margin-right: 0.7rem;
+}
+
+.cardTitle{
+    font-size: 1.7rem;
+    font-family: fantasy;
+    font-weight: bold;
+    border-bottom: 2px #5d4a34 solid;
+    margin-bottom: 1.5rem;
+    color: #462e1d;
+    padding: 0.5rem;
+ }
+ 
+ .cardText{
+    font-family: monospace;
+    font-size: 1.16rem;
+    color: #5d4a34;
+ }
