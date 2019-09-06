@@ -25,6 +25,7 @@ class DemoCarousel extends Component {
                       <p className="legend">Lune rouge sombre</p>
                   </div>
               </Carousel>
+              
             </Container>
         );
     }

@@ -10,6 +10,11 @@ import {
  
   } from 'reactstrap';
 
+import { Container } from 'reactstrap';
+
+import Dropdown from './dropdown/Dropdown';
+
+
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -28,23 +33,25 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Sur la lune</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink>Inscription</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink>Connexion</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink>FAQ</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
+        <Container>
+          <Navbar color="light" light expand="md">
+            <NavbarBrand href="/">Sur la lune</NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto" navbar>
+                <NavItem>
+                  <Dropdown />
+                </NavItem>
+                <NavItem>
+                  <NavLink>Connexion</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink>FAQ</NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </Navbar>
+        </Container>
       </div>  
     );
   }
